@@ -1,0 +1,755 @@
+/* ========================================
+   RESPONSIVE OVERRIDES - MOBILE & TABLET
+   ========================================
+   
+   Estratégia: Desktop-first, não-destrutiva
+   - Mantém o CSS atual como base (desktop)
+   - Aplica overrides apenas para breakpoints menores
+   - Usa max-width media queries para isolamento
+   - Não afeta a experiência desktop existente
+   
+   Breakpoints:
+   - XS: 320-375px (telefones pequenos)
+   - SM: 376-480px (telefones)
+   - MD: 481-768px (tablet/iPad portrait)
+   - LG: 769-1024px (iPad landscape/small laptops)
+   
+   Regra de ouro: NUNCA alterar regras globais
+   ======================================== */
+
+/* ========================================
+   1. HEADER / NAVEGAÇÃO - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Header mais compacto */
+  .mobile-header-compact {
+    height: 3.5rem; /* 56px - altura mínima para touch */
+  }
+  
+  /* Logo menor no mobile */
+  .mobile-logo {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.2;
+  }
+  
+  /* Menu hamburger visível */
+  .mobile-menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px; /* Touch target mínimo */
+    height: 44px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  /* Menu desktop oculto */
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  /* Menu mobile drawer */
+  .mobile-nav-drawer {
+    position: fixed;
+    top: 56px; /* Altura do header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 40;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .mobile-nav-drawer.open {
+    transform: translateX(0);
+  }
+  
+  /* Dark mode para mobile drawer */
+  .dark .mobile-nav-drawer {
+    background: rgba(15, 23, 42, 0.95);
+  }
+  
+  /* Links do menu mobile */
+  .mobile-nav-link {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    border-bottom: 1px solid #e5e7eb;
+    transition: color 0.2s ease;
+  }
+  
+  .dark .mobile-nav-link {
+    color: #d1d5db;
+    border-bottom-color: #374151;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #0ea5e9;
+  }
+  
+  /* Toggles no mobile drawer */
+  .mobile-nav-toggles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .dark .mobile-nav-toggles {
+    border-top-color: #374151;
+  }
+}
+
+/* Tablet: 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-header-compact {
+    height: 4rem; /* 64px */
+  }
+  
+  .mobile-nav-drawer {
+    top: 64px;
+  }
+}
+
+/* ========================================
+   2. HERO SECTION - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Hero mais compacto */
+  .mobile-hero-compact {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  /* Grid em coluna única */
+  .mobile-hero-grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Ordem: imagem primeiro, texto depois */
+  .mobile-hero-image-first {
+    order: 1;
+  }
+  
+  .mobile-hero-text-second {
+    order: 2;
+    text-align: center;
+  }
+  
+  /* Títulos menores */
+  .mobile-hero-title {
+    font-size: 2rem !important; /* 32px */
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+  
+  .mobile-hero-subtitle {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-hero-description {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botões empilhados */
+  .mobile-hero-buttons {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .mobile-hero-button {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    min-height: 44px; /* Touch target mínimo */
+  }
+  
+  /* Imagem menor */
+  .mobile-hero-image {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
+  }
+  
+  /* Elementos decorativos menores */
+  .mobile-hero-decoration {
+    display: none; /* Ocultar no mobile para simplicidade */
+  }
+  
+  /* Scroll indicator menor */
+  .mobile-scroll-indicator {
+    bottom: 1rem;
+    width: 20px;
+    height: 32px;
+  }
+}
+
+/* Tablet: 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-hero-title {
+    font-size: 2.5rem !important; /* 40px */
+  }
+  
+  .mobile-hero-subtitle {
+    font-size: 1.25rem !important; /* 20px */
+  }
+  
+  .mobile-hero-image {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  
+  .mobile-hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .mobile-hero-button {
+    width: auto;
+    min-width: 140px;
+  }
+}
+
+/* ========================================
+   3. GRID / CARDS - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Grids em coluna única */
+  .mobile-grid-single {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  /* Cards mais compactos */
+  .mobile-card-compact {
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  /* Títulos de seção menores */
+  .mobile-section-title {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-section-subtitle {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Skills cards */
+  .mobile-skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  .mobile-skill-card {
+    padding: 1rem !important;
+  }
+  
+  .mobile-skill-icon {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 0.75rem;
+  }
+  
+  .mobile-skill-title {
+    font-size: 1.125rem !important; /* 18px */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Progress bars menores */
+  .mobile-progress-bar {
+    height: 8px !important;
+  }
+  
+  /* Projects grid */
+  .mobile-projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  .mobile-project-card {
+    padding: 1rem !important;
+  }
+  
+  .mobile-project-image {
+    height: 150px !important;
+  }
+  
+  .mobile-project-title {
+    font-size: 1.125rem !important; /* 18px */
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobile-project-description {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.4;
+  }
+  
+  /* Certifications grid */
+  .mobile-certifications-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem;
+  }
+  
+  .mobile-certification-card {
+    padding: 0.75rem !important;
+    height: 120px !important;
+  }
+  
+  .mobile-certification-icon {
+    width: 32px !important;
+    height: 32px !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobile-certification-title {
+    font-size: 0.75rem !important; /* 12px */
+    line-height: 1.2;
+  }
+}
+
+/* Tablet: 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-certifications-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  .mobile-certification-card {
+    height: 140px !important;
+  }
+  
+  .mobile-certification-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .mobile-certification-title {
+    font-size: 0.875rem !important; /* 14px */
+  }
+}
+
+/* ========================================
+   4. FORMULÁRIOS - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Formulário full-width */
+  .mobile-form-full {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  
+  /* Campos de input maiores */
+  .mobile-input-large {
+    width: 100% !important;
+    padding: 0.875rem !important;
+    font-size: 1rem !important;
+    min-height: 44px; /* Touch target mínimo */
+    border-radius: 0.5rem;
+  }
+  
+  /* Labels mais claros */
+  .mobile-label-large {
+    font-size: 0.875rem !important; /* 14px */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Textarea responsiva */
+  .mobile-textarea-large {
+    width: 100% !important;
+    min-height: 120px !important;
+    padding: 0.875rem !important;
+    font-size: 1rem !important;
+    resize: vertical;
+  }
+  
+  /* Botão de submit maior */
+  .mobile-submit-button {
+    width: 100% !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    min-height: 48px; /* Touch target mínimo */
+    border-radius: 0.5rem;
+  }
+  
+  /* Informações de contato empilhadas */
+  .mobile-contact-info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mobile-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+  }
+  
+  .dark .mobile-contact-item {
+    background: #1e293b;
+  }
+  
+  .mobile-contact-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0ea5e9;
+    color: white;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .mobile-contact-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+
+/* ========================================
+   5. MODAIS - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Modal full-screen no mobile */
+  .mobile-modal-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    overflow-y: auto;
+  }
+  
+  /* Header do modal compacto */
+  .mobile-modal-header {
+    padding: 1rem !important;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .dark .mobile-modal-header {
+    border-bottom-color: #374151;
+  }
+  
+  .mobile-modal-title {
+    font-size: 1.125rem !important; /* 18px */
+    margin-bottom: 0.25rem;
+  }
+  
+  .mobile-modal-subtitle {
+    font-size: 0.75rem !important; /* 12px */
+  }
+  
+  /* Conteúdo do modal */
+  .mobile-modal-content {
+    padding: 1rem !important;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+  
+  /* Imagem do modal responsiva */
+  .mobile-modal-image {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+  
+  /* Footer do modal */
+  .mobile-modal-footer {
+    padding: 1rem !important;
+    border-top: 1px solid #e5e7eb;
+    position: sticky;
+    bottom: 0;
+    background: white;
+  }
+  
+  .dark .mobile-modal-footer {
+    border-top-color: #374151;
+    background: #1e293b;
+  }
+  
+  /* Botão de fechar maior */
+  .mobile-modal-close {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Botão de ação maior */
+  .mobile-modal-action-button {
+    width: 100% !important;
+    padding: 0.875rem !important;
+    font-size: 1rem !important;
+    min-height: 44px;
+  }
+}
+
+/* ========================================
+   6. FOOTER - MOBILE OVERRIDES
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Footer mais compacto */
+  .mobile-footer-compact {
+    padding: 2rem 0 !important;
+  }
+  
+  /* Grid em coluna única */
+  .mobile-footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  /* Brand section */
+  .mobile-footer-brand {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-footer-logo {
+    font-size: 1.25rem !important; /* 20px */
+    margin-bottom: 0.75rem;
+  }
+  
+  .mobile-footer-description {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Links empilhados */
+  .mobile-footer-links {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .mobile-footer-link {
+    font-size: 0.875rem !important; /* 14px */
+    padding: 0.5rem 0;
+  }
+  
+  /* Informações de contato */
+  .mobile-footer-contact {
+    text-align: center;
+  }
+  
+  .mobile-footer-contact-title {
+    font-size: 1rem !important; /* 16px */
+    margin-bottom: 0.75rem;
+  }
+  
+  .mobile-footer-contact-item {
+    font-size: 0.875rem !important; /* 14px */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Bottom section */
+  .mobile-footer-bottom {
+    flex-direction: column !important;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .mobile-footer-copyright {
+    font-size: 0.75rem !important; /* 12px */
+  }
+  
+  .mobile-footer-links-bottom {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .mobile-footer-link-bottom {
+    font-size: 0.75rem !important; /* 12px */
+  }
+  
+  /* Botão back to top */
+  .mobile-back-to-top {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 auto;
+  }
+}
+
+/* ========================================
+   7. UTILITÁRIOS MOBILE
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Espaçamentos reduzidos */
+  .mobile-padding-small {
+    padding: 1rem !important;
+  }
+  
+  .mobile-margin-small {
+    margin: 1rem !important;
+  }
+  
+  /* Texto menor */
+  .mobile-text-small {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.5;
+  }
+  
+  /* Botões touch-friendly */
+  .mobile-touch-button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  /* Containers fluidos */
+  .mobile-container-fluid {
+    width: 100% !important;
+    max-width: none !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Ocultar elementos desnecessários no mobile */
+  .mobile-hide {
+    display: none !important;
+  }
+  
+  /* Mostrar apenas no mobile */
+  .mobile-only {
+    display: block !important;
+  }
+  
+  .mobile-only-inline {
+    display: inline !important;
+  }
+  
+  .mobile-only-flex {
+    display: flex !important;
+  }
+}
+
+/* Desktop: ocultar elementos mobile-only */
+@media screen and (min-width: 769px) {
+  .mobile-only,
+  .mobile-only-inline,
+  .mobile-only-flex {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   8. ACESSIBILIDADE MOBILE
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Focus rings mais visíveis */
+  .mobile-focus-ring {
+    outline: 2px solid #0ea5e9 !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* Estados de hover desabilitados em touch */
+  .mobile-no-hover:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Animações reduzidas para performance */
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-reduce-motion {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
+  /* Alto contraste */
+  @media (prefers-contrast: high) {
+    .mobile-high-contrast {
+      border: 2px solid currentColor !important;
+    }
+  }
+}
+
+/* ========================================
+   9. PERFORMANCE MOBILE
+   ======================================== */
+
+/* Mobile: 320px - 768px */
+@media screen and (max-width: 768px) {
+  /* Otimizações de performance */
+  .mobile-optimize-performance {
+    will-change: auto !important;
+    transform: translateZ(0) !important; /* Force hardware acceleration */
+  }
+  
+  /* Lazy loading para imagens não críticas */
+  .mobile-lazy-image {
+    loading: lazy !important;
+  }
+  
+  /* Containers com overflow otimizado */
+  .mobile-scroll-container {
+    -webkit-overflow-scrolling: touch !important;
+    overflow-scrolling: touch !important;
+  }
+}
+
+/* ========================================
+   FIM DOS OVERRIDES RESPONSIVOS
+   ======================================== */

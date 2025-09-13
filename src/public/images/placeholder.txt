@@ -1,0 +1,36 @@
+# Placeholder Images
+
+This directory should contain the following images:
+
+## Required Images:
+- avatar.webp (400x400px) - Profile photo for hero section
+- about-image.webp (600x600px) - About section image
+- hero-bg.webp (1920x1080px) - Hero background (optional)
+
+## Project Images (600x400px each):
+- project-1.webp - E-Commerce Platform
+- project-2.webp - Task Management App
+- project-3.webp - Weather Dashboard
+- project-4.webp - Blog CMS
+- project-5.webp - Portfolio Website
+- project-6.webp - Chat Application
+
+## Social Media Images:
+- og-image.jpg (1200x630px) - Open Graph image for social sharing
+
+## Instructions:
+1. Replace these placeholder files with actual images
+2. Use WebP format for better performance
+3. Optimize images for web (compress without losing quality)
+4. Ensure all images are properly licensed for use
+
+## Image Sources:
+You can use:
+- Unsplash (https://unsplash.com) - Free stock photos
+- Pexels (https://pexels.com) - Free stock photos
+- Your own photos
+- AI-generated images
+
+## Image Optimization:
+- Use tools like TinyPNG or Squoosh to optimize images
+- Consider using Next.js Image component for automatic optimization
