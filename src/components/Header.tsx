@@ -57,9 +57,23 @@ const Header = () => {
           >
             <button
               onClick={() => scrollToSection('#home')}
-              className="text-lg sm:text-xl md:text-2xl font-bold text-gradient focus-ring rounded-lg px-1 sm:px-2 py-1 mobile-logo"
+              className="flex items-center space-x-2 text-lg sm:text-xl md:text-2xl font-bold text-gradient focus-ring rounded-lg px-1 sm:px-2 py-1 mobile-logo"
             >
-              Pedro Soeiro
+              <span>Pedro Soeiro</span>
+              <motion.div
+                animate={{ 
+                  rotate: [0, 10, -10, 0],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{ 
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="text-primary-500 dark:text-primary-400 font-mono text-sm sm:text-base md:text-lg"
+              >
+                &lt;/&gt;
+              </motion.div>
             </button>
           </motion.div>
 
