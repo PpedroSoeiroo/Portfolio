@@ -19,11 +19,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Pedro Soeiro' }],
   creator: 'Pedro Soeiro',
   publisher: 'Pedro Soeiro',
-  icons: {
-    icon: 'https://i.postimg.cc/mrqHMV5z/Chat-GPT-Image-Sep-13-2025-03-55-24-PM.png',
-    shortcut: 'https://i.postimg.cc/mrqHMV5z/Chat-GPT-Image-Sep-13-2025-03-55-24-PM.png',
-    apple: 'https://i.postimg.cc/mrqHMV5z/Chat-GPT-Image-Sep-13-2025-03-55-24-PM.png',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
