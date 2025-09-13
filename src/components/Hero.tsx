@@ -54,7 +54,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mb-4 sm:mb-6 mt-8 sm:mt-12 lg:mt-16"
             >
-              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight whitespace-nowrap mobile-hero-title">
+              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight whitespace-nowrap mobile-hero-title font-script">
                 {t('hero.greeting')}{' '}
                 <span className="text-gradient">Pedro Soeiro</span>
               </h1>

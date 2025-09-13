@@ -38,7 +38,7 @@ const Certifications = () => {
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <div className="inline-block mb-4 sm:mb-6">
               <div className="relative">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 mobile-section-title">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 mobile-section-title font-script">
                   <span className="bg-gradient-to-r from-primary-500 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {t('certifications.title')}
                   </span>
