@@ -19,11 +19,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Pedro Soeiro' }],
   creator: 'Pedro Soeiro',
   publisher: 'Pedro Soeiro',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.svg',
-    apple: '/icon.png',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
