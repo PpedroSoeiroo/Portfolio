@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google';
 import '../styles/globals.css';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { placeholderImages } from '@/components/PlaceholderImages';
 
 const inter = Inter({ subsets: ['latin'] });
+const dancingScript = Dancing_Script({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-dancing-script'
+});
 
 export const metadata: Metadata = {
   title: 'Pedro Soeiro - Full Stack Developer',
@@ -59,7 +65,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} ${dancingScript.variable} antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

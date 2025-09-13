@@ -54,9 +54,16 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mb-4 sm:mb-6 mt-8 sm:mt-12 lg:mt-16"
             >
-              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight whitespace-nowrap mobile-hero-title font-script">
+              <h1 
+                className="text-xl xs:text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight whitespace-nowrap mobile-hero-title font-script" 
+                style={{
+                  fontFamily: 'var(--font-dancing-script), cursive',
+                  fontWeight: '400',
+                  fontStyle: 'normal'
+                }}
+              >
                 {t('hero.greeting')}{' '}
-                <span className="text-gradient">Pedro Soeiro</span>
+                <span className="text-gradient" style={{fontFamily: 'var(--font-dancing-script), cursive'}}>Pedro Soeiro</span>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold text-primary-600 dark:text-primary-400 mb-4 sm:mb-6 min-h-[1.5em] mobile-hero-subtitle">
                 <TypewriterText 
