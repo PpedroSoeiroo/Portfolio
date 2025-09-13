@@ -101,15 +101,15 @@ const About = () => {
               </h3>
               
               <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300">
-                <p className="text-base sm:text-lg leading-relaxed">
+                <p className="text-base sm:text-lg leading-relaxed text-justify tracking-normal">
                   {t('about.description1')}
                 </p>
                 
-                <p className="text-base sm:text-lg leading-relaxed">
+                <p className="text-base sm:text-lg leading-relaxed text-justify tracking-normal">
                   {t('about.description2')}
                 </p>
                 
-                <p className="text-base sm:text-lg leading-relaxed">
+                <p className="text-base sm:text-lg leading-relaxed text-justify tracking-normal">
                   {t('about.description3')}
                 </p>
               </div>
