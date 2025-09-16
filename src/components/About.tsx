@@ -101,7 +101,7 @@ const About = () => {
               </h3>
               
               <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300">
-                <p className="text-base sm:text-lg leading-relaxed text-justify tracking-normal">
+                <p className="text-base sm:text-lg leading-relaxed text-justify tracking-tight">
                   {t('about.description1')}
                 </p>
                 
