@@ -202,35 +202,16 @@ const Certifications = () => {
                     </div>
                     ) : cert.isHigherEducation ? (
                       <div className="relative flex items-center justify-center w-16 h-16 mb-4">
-                      <div className={`relative flex items-center justify-center w-16 h-16 bg-gradient-to-br ${cert.color} rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300`}>
-                        <svg 
-                          className="w-8 h-8 text-white filter drop-shadow-lg" 
-                          fill="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
-                          <path d="M2 17L12 22L22 17"/>
-                          <path d="M2 12L12 17L22 12"/>
-                        </svg>
-                        
-                        {/* Certificate Badge */}
-                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white dark:border-dark-800 group-hover:scale-110 transition-transform duration-300">
-                          <svg 
-                            className="w-4 h-4 text-white" 
-                            fill="currentColor" 
-                            viewBox="0 0 20 20"
-                          >
-                            <path 
-                              fillRule="evenodd" 
-                              d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" 
-                              clipRule="evenodd" 
-                            />
-                          </svg>
-                          
-                          {/* Shine Effect */}
-                          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </div>
-                      </div>
+                      <img 
+                        src="https://i.postimg.cc/wTgK1tpC/2023-marca-anhaguera-31e8aec2-32.png"
+                        alt="Anhanguera Logo"
+                        className="w-16 h-16 filter drop-shadow-2xl brightness-125 contrast-150 saturate-130"
+                        style={{
+                          mixBlendMode: 'multiply',
+                          backgroundColor: 'transparent',
+                          objectFit: 'contain'
+                        }}
+                      />
                     </div>
                     ) : (
                       <div className="relative flex items-center justify-center w-16 h-16 mb-4">
