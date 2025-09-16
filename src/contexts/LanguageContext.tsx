@@ -93,7 +93,7 @@ const translations = {
     
     'experiences.webDeveloper.title': 'Desenvolvedor Web',
     'experiences.webDeveloper.company': 'Empresa de Tecnologia',
-    'experiences.webDeveloper.period': '2021 - 2022',
+    'experiences.webDeveloper.period': '2022 - 2023',
     'experiences.webDeveloper.description': 'Desenvolvimento de interfaces web responsivas e sistemas backend robustos. Trabalho em equipe utilizando metodologias ágeis, contribuindo para projetos de grande escala com foco em qualidade e performance.',
     
     'experiences.frontendDev.title': 'Desenvolvedor Frontend',
@@ -230,7 +230,7 @@ const translations = {
     
     'experiences.webDeveloper.title': 'Web Developer',
     'experiences.webDeveloper.company': 'Technology Company',
-    'experiences.webDeveloper.period': '2021 - 2022',
+    'experiences.webDeveloper.period': '2022 - 2023',
     'experiences.webDeveloper.description': 'Development of responsive web interfaces and robust backend systems. Teamwork using agile methodologies, contributing to large-scale projects with focus on quality and performance.',
     
     'experiences.frontendDev.title': 'Frontend Developer',
