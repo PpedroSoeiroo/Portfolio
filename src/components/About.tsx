@@ -97,7 +97,7 @@ const About = () => {
               className="space-y-4 sm:space-y-6 order-1 lg:order-2"
             >
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
-                Meu nome é Pedro Soeiro, tenho 27 anos e sou um Desenvolvedor Full Stack
+                {t('about.title')}
               </h3>
               
               <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-300">
