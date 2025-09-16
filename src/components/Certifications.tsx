@@ -9,6 +9,7 @@ const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState<any>(null);
 
   const certifications = [
+    { name: t('certifications.higherEducation'), color: 'from-indigo-600 to-purple-600', isHarvard: false, isIBM: false, isIFRS: false, isCybersecurity: false, isDataEngineering: false, isGoogle: false, isSENAI: false, isPython: false, isLinux: false, isJavaScript: false, isHigherEducation: true, previewUrl: null, hasSensitiveData: false },
     { name: t('certifications.dbAdmin'), color: 'from-blue-500 to-blue-600', isHarvard: false, isIBM: false, isIFRS: true, isCybersecurity: false, isDataEngineering: false, isGoogle: false, isSENAI: false, isPython: false, isLinux: false, isJavaScript: false, previewUrl: 'https://i.postimg.cc/5yxjjWRb/Any-Conv-com-Screenshot-From-2025-09-12-17-26-22-1.webp', hasSensitiveData: false },
     { name: t('certifications.jsAdvanced'), color: 'from-yellow-500 to-yellow-600', isHarvard: false, isIBM: false, isIFRS: false, isCybersecurity: false, isDataEngineering: false, isGoogle: false, isSENAI: false, isPython: false, isLinux: false, isJavaScript: true, previewUrl: 'https://i.postimg.cc/NMC5zz04/Any-Conv-com-Screenshot-From-2025-09-12-17-21-39.webp', hasSensitiveData: false },
     { name: t('certifications.cybersecurity'), color: 'from-red-500 to-red-600', isHarvard: false, isIBM: false, isIFRS: false, isCybersecurity: true, isDataEngineering: false, isGoogle: false, isSENAI: false, isPython: false, isLinux: false, isJavaScript: false, previewUrl: 'https://i.postimg.cc/vmd9rk1x/Any-Conv-com-Screenshot-From-2025-09-12-17-20-29.webp', hasSensitiveData: false },
@@ -198,6 +199,38 @@ const Certifications = () => {
                           objectFit: 'contain'
                         }}
                       />
+                    </div>
+                    ) : cert.isHigherEducation ? (
+                      <div className="relative flex items-center justify-center w-16 h-16 mb-4">
+                      <div className={`relative flex items-center justify-center w-16 h-16 bg-gradient-to-br ${cert.color} rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300`}>
+                        <svg 
+                          className="w-8 h-8 text-white filter drop-shadow-lg" 
+                          fill="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                          <path d="M2 17L12 22L22 17"/>
+                          <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                        
+                        {/* Certificate Badge */}
+                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white dark:border-dark-800 group-hover:scale-110 transition-transform duration-300">
+                          <svg 
+                            className="w-4 h-4 text-white" 
+                            fill="currentColor" 
+                            viewBox="0 0 20 20"
+                          >
+                            <path 
+                              fillRule="evenodd" 
+                              d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" 
+                              clipRule="evenodd" 
+                            />
+                          </svg>
+                          
+                          {/* Shine Effect */}
+                          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                      </div>
                     </div>
                     ) : (
                       <div className="relative flex items-center justify-center w-16 h-16 mb-4">

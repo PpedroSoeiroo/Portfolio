@@ -56,6 +56,7 @@ const translations = {
     // Certifications
     'certifications.title': 'Certificações',
     'certifications.subtitle': 'Certificações profissionais e cursos que validam minha expertise',
+    'certifications.higherEducation': 'Ensino Superior em Análise e Desenvolvimento de Sistemas',
     'certifications.dbAdmin': 'Administrador de Banco de Dados Certificado',
     'certifications.jsAdvanced': 'JavaScript (Avançado)',
     'certifications.cybersecurity': 'Princípios de Cibersegurança',
@@ -193,6 +194,7 @@ const translations = {
     // Certifications
     'certifications.title': 'Certifications',
     'certifications.subtitle': 'Professional certifications and courses that validate my expertise',
+    'certifications.higherEducation': 'Higher Education in Systems Analysis and Development',
     'certifications.dbAdmin': 'Certified Database Administrator',
     'certifications.jsAdvanced': 'JavaScript (Advanced)',
     'certifications.cybersecurity': 'Cybersecurity Principles',
