@@ -25,6 +25,9 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const { t } = useLanguage();
+  
+  // Ensure each card has a unique state
+  const cardId = `project-card-${project.id}`;
 
   const handleCardClick = (e: React.MouseEvent) => {
     // Prevent expansion if clicking on links
@@ -36,15 +39,13 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
 
   return (
     <motion.div
+      key={cardId}
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
-      className={`group relative bg-white dark:bg-dark-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col h-full mobile-project-card ${
-        isExpanded ? 'lg:col-span-2 lg:row-span-2' : ''
-      }`}
+      className="group relative bg-white dark:bg-dark-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col h-full mobile-project-card"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       onClick={handleCardClick}
-      layout
     >
       {/* Image Container */}
       <div className="relative h-48 lg:h-56 overflow-hidden mobile-project-image">
