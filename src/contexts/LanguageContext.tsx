@@ -42,7 +42,7 @@ const translations = {
     // About
     'about.title': 'Sobre Mim',
     'about.subtitle': 'Conheça um pouco mais sobre minha jornada',
-    'about.description1': 'Meu nome é Pedro Soeiro, tenho 27 anos e sou um Desenvolvedor Full Stack apaixonado, com mais de 3 anos de experiência criando soluções web modernas e eficientes. Minha paixão é transformar ideias em realidade através de código limpo e bem estruturado.',
+    'about.description1': 'apaixonado, com mais de 3 anos de experiência criando soluções web modernas e eficientes. Minha paixão é transformar ideias em realidade através de código limpo e bem estruturado.',
     'about.description2': 'Especializo-me em tecnologias como React, Next.js, Node.js, TypeScript, Python e JavaScript, sempre buscando as melhores práticas e padrões da indústria. Acredito que a tecnologia deve ser acessível e resolver problemas reais.',
     'about.description3': 'Quando não estou codificando, você pode me encontrar explorando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade de desenvolvedores.',
     
@@ -179,7 +179,7 @@ const translations = {
     // About
     'about.title': 'About Me',
     'about.subtitle': 'Get to know a bit more about my journey',
-    'about.description1': 'My name is Pedro Soeiro, I\'m 27 years old and I\'m a passionate Full Stack Developer, with more than 3 years of experience creating modern and efficient web solutions. My passion is transforming ideas into reality through clean and well-structured code.',
+    'about.description1': 'passionate, with more than 3 years of experience creating modern and efficient web solutions. My passion is transforming ideas into reality through clean and well-structured code.',
     'about.description2': 'I specialize in technologies like React, Next.js, Node.js, TypeScript, Python and JavaScript, always seeking the best practices and industry standards. I believe technology should be accessible and solve real problems.',
     'about.description3': 'When I\'m not coding, you can find me exploring new technologies, contributing to open source projects or sharing knowledge with the developer community.',
     
