@@ -21,6 +21,7 @@ const translations = {
     'nav.skills': 'Habilidades',
     'nav.certifications': 'Certificações',
     'nav.projects': 'Projetos',
+    'nav.experiences': 'Experiências',
     'nav.contact': 'Contato',
     
     // Hero
@@ -78,6 +79,38 @@ const translations = {
     'projects.code': 'Ver Código',
     'projects.viewAll': 'Ver Todos os Projetos',
     
+    // Experiences
+    'experiences.title': 'Experiências',
+    'experiences.subtitle': 'Minha jornada profissional e projetos desenvolvidos',
+    'experiences.current': 'Atual',
+    'experiences.contact': 'Vamos Trabalhar Juntos',
+    
+    // Experience Details
+    'experiences.freelancer.title': 'Desenvolvedor Full Stack Freelancer',
+    'experiences.freelancer.company': 'Trabalho Autônomo',
+    'experiences.freelancer.period': '2022 - Presente',
+    'experiences.freelancer.description': 'Desenvolvimento de aplicações web completas para clientes diversos, desde landing pages até sistemas complexos. Especialização em React, Next.js, Node.js e TypeScript, sempre focando em soluções escaláveis e performáticas.',
+    
+    'experiences.webDeveloper.title': 'Desenvolvedor Web',
+    'experiences.webDeveloper.company': 'Empresa de Tecnologia',
+    'experiences.webDeveloper.period': '2021 - 2022',
+    'experiences.webDeveloper.description': 'Desenvolvimento de interfaces web responsivas e sistemas backend robustos. Trabalho em equipe utilizando metodologias ágeis, contribuindo para projetos de grande escala com foco em qualidade e performance.',
+    
+    'experiences.frontendDev.title': 'Desenvolvedor Frontend',
+    'experiences.frontendDev.company': 'Agência Digital',
+    'experiences.frontendDev.period': '2020 - 2021',
+    'experiences.frontendDev.description': 'Criação de interfaces modernas e interativas utilizando React e Vue.js. Desenvolvimento de componentes reutilizáveis e implementação de designs responsivos, sempre priorizando a experiência do usuário.',
+    
+    'experiences.dataVoice.title': 'Técnico em Informática e Atendimento',
+    'experiences.dataVoice.company': 'Data Voice Informática',
+    'experiences.dataVoice.period': 'Fevereiro/2021 - Dezembro/2024',
+    'experiences.dataVoice.description': 'Atendimento ao cliente e suporte técnico. Edição básica de logos e documentos (Word, PDF, Excel). Personalização gráfica: criação de cardápios e cartões de visita. Manutenção e reparo de computadores, notebooks e impressoras.',
+    
+    'experiences.cef.title': 'Secretário',
+    'experiences.cef.company': 'CEF',
+    'experiences.cef.period': 'Fevereiro/2021 - Dezembro/2021',
+    'experiences.cef.description': 'Atendimento ao cliente. Edição de documentos (Word, PDF, Excel). Emissão de boletos de pagamento, relatórios escolares e planilhas.',
+    
     // Project Details
     'projects.snakeGame.title': 'Snake Game',
     'projects.snakeGame.description': 'Snake Game clássico',
@@ -125,6 +158,7 @@ const translations = {
     'nav.skills': 'Skills',
     'nav.certifications': 'Certifications',
     'nav.projects': 'Projects',
+    'nav.experiences': 'Experiences',
     'nav.contact': 'Contact',
     
     // Hero
@@ -181,6 +215,38 @@ const translations = {
     'projects.demo': 'View Demo',
     'projects.code': 'View Code',
     'projects.viewAll': 'View All Projects',
+    
+    // Experiences
+    'experiences.title': 'Experiences',
+    'experiences.subtitle': 'My professional journey and developed projects',
+    'experiences.current': 'Current',
+    'experiences.contact': 'Let\'s Work Together',
+    
+    // Experience Details
+    'experiences.freelancer.title': 'Full Stack Developer Freelancer',
+    'experiences.freelancer.company': 'Self-Employed',
+    'experiences.freelancer.period': '2022 - Present',
+    'experiences.freelancer.description': 'Development of complete web applications for diverse clients, from landing pages to complex systems. Specialization in React, Next.js, Node.js and TypeScript, always focusing on scalable and performant solutions.',
+    
+    'experiences.webDeveloper.title': 'Web Developer',
+    'experiences.webDeveloper.company': 'Technology Company',
+    'experiences.webDeveloper.period': '2021 - 2022',
+    'experiences.webDeveloper.description': 'Development of responsive web interfaces and robust backend systems. Teamwork using agile methodologies, contributing to large-scale projects with focus on quality and performance.',
+    
+    'experiences.frontendDev.title': 'Frontend Developer',
+    'experiences.frontendDev.company': 'Digital Agency',
+    'experiences.frontendDev.period': '2020 - 2021',
+    'experiences.frontendDev.description': 'Creation of modern and interactive interfaces using React and Vue.js. Development of reusable components and implementation of responsive designs, always prioritizing user experience.',
+    
+    'experiences.dataVoice.title': 'IT Technician & Customer Service',
+    'experiences.dataVoice.company': 'Data Voice Informática',
+    'experiences.dataVoice.period': 'February/2021 - December/2024',
+    'experiences.dataVoice.description': 'Customer service and technical support. Basic editing of logos and documents (Word, PDF, Excel). Graphic customization: creation of menus and business cards. Maintenance and repair of computers, laptops, and printers.',
+    
+    'experiences.cef.title': 'Secretary',
+    'experiences.cef.company': 'CEF',
+    'experiences.cef.period': 'February/2021 - December/2021',
+    'experiences.cef.description': 'Customer service. Document editing (Word, PDF, Excel). Issuance of payment slips, school reports, and spreadsheets.',
     
     // Project Details
     'projects.snakeGame.title': 'Snake Game',

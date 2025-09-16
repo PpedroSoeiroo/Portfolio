@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Certifications from '@/components/Certifications';
 import ProjectsGrid from '@/components/ProjectsGrid';
+import Experiences from '@/components/Experiences';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 
@@ -29,6 +30,7 @@ export default function Home() {
       <Skills />
       <Certifications />
       <ProjectsGrid />
+      <Experiences />
       <ContactForm />
       <Footer />
     </main>
