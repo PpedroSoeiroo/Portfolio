@@ -40,7 +40,7 @@ const translations = {
     'typewriter.engineer': 'Engenheiro Full Stack',
     
     // About
-    'about.title': 'Meu nome é Pedro Soeiro, tenho 27 anos e sou um Desenvolvedor Full Stack',
+    'about.title': 'Sobre Mim',
     'about.subtitle': 'Conheça um pouco mais sobre minha jornada',
     'about.description1': 'apaixonado, com mais de 3 anos de experiência criando soluções web modernas e eficientes. Minha paixão é transformar ideias em realidade através de código limpo e bem estruturado.',
     'about.description2': 'Especializo-me em tecnologias como React, Next.js, Node.js, TypeScript, Python e JavaScript, sempre buscando as melhores práticas e padrões da indústria. Acredito que a tecnologia deve ser acessível e resolver problemas reais.',
@@ -178,7 +178,7 @@ const translations = {
     'typewriter.engineer': 'Full Stack Engineer',
     
     // About
-    'about.title': 'My name is Pedro Soeiro, I am 27 years old and I am a Full Stack Developer',
+    'about.title': 'About Me',
     'about.subtitle': 'Get to know a bit more about my journey',
     'about.description1': 'passionate, with more than 3 years of experience creating modern and efficient web solutions. My passion is transforming ideas into reality through clean and well-structured code.',
     'about.description2': 'I specialize in technologies like React, Next.js, Node.js, TypeScript, Python and JavaScript, always seeking the best practices and industry standards. I believe technology should be accessible and solve real problems.',
